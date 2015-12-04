@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+<base href="/angular-app-mean/"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="INDEX,FOLLOW" name="Robots" />
+
+<title>{{title || 'Welcome | Angular'}}</title>
+
+<link rel="stylesheet"
+	href="./public/libs/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet"
+	href="./modules/core/css/core.css" />
+</head>
+<body>
+<a href="#/someroute" />
+	<ng-view></ng-view>
+
+	<!--Java Script-->
+	<script type="text/javascript" src="./public/libs/angular/angular.js"></script>
+	<script type="text/javascript" src="./public/libs/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="./public/libs/angular-cookies/angular-cookies.min.js"></script>
+	<script type="text/javascript" src="./public/libs/angular-sanitize/angular-sanitize.js"></script>
+	<script type="text/javascript" src="./config.js"></script>
+  <script type="text/javascript" src="./application.js"></script>
+  <script type="text/javascript" src="./modules/core/core.client.module.js"></script>
+  <script type="text/javascript" src="./modules/core/config/core.client.routes.js"></script>
+  <script type="text/javascript" src="./modules/core/controllers/header.client.controller.js"></script>
+</body>
+</html>
