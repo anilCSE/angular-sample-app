@@ -5,25 +5,7 @@ angular.module('core').factory('_', ['$window',
   function($window) {
     return $window._;
   }
-]).service('fileUpload', ['$http','Authentication', function ($http,Authentication) {
-  this.uploadFileToUrl = function(file, uploadUrl){
-    var fd = new FormData();
-    fd.append('file', file);
-    var networkApi = Authentication.networkApi;
-    $http.post(networkApi+uploadUrl, fd, {
-      transformRequest: angular.identity,
-      headers: {'Content-Type': undefined}
-    })
-      .success(function(data){
-        console.log('uploaded:'+data);
-        return data;
-      })
-      .error(function(data){
-        console.log('error while uploading:'+data);
-        return data;
-      });
-  };
-}]).service('TrianglifyService', [function() {
+]).service('TrianglifyService', [function() {
   this.getCanvasImage = function() {
     return new window.Trianglify({
       variance:0.75,

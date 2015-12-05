@@ -3,7 +3,7 @@
 // Setting up route
 angular.module('core').config([
   '$routeProvider', '$httpProvider',
-  function ($routeProvider, $httpProvider) {
+  function ($routeProvider) {
 
     //Set the default httpProvider to send credentials if available
     //$httpProvider.defaults.withCredentials = true;

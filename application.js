@@ -5,21 +5,21 @@ angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfig
 
 // Setting HTML5 Location Mode
 angular.module(ApplicationConfiguration.applicationModuleName).config([
-  '$locationProvider', '$httpProvider',
-  function($locationProvider, $httpProvider) {
-    //$locationProvider.html5Mode(true);
-    //$httpProvider.defaults.useXDomain = true;
-  }
+    '$locationProvider', '$httpProvider',
+    function ($locationProvider, $httpProvider) {
+        $locationProvider.html5Mode(true);
+        //$httpProvider.defaults.useXDomain = true;
+    }
 ]);
 
 //Then define the init function for starting up the application
 angular.element(document).ready(function () {
-  //Fixing facebook bug with redirect
-  if (window.location.hash === '#_=_') {
-    window.location.hash = '#!';
-  }
+    //Fixing facebook bug with redirect
+    if (window.location.hash === '#_=_') {
+        window.location.hash = '#!';
+    }
 
-  //Then init the app
-  angular.bootstrap(document, [ApplicationConfiguration.applicationModuleName]);
+    //Then init the app
+    angular.bootstrap(document, [ApplicationConfiguration.applicationModuleName]);
 
 });
