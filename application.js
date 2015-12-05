@@ -7,7 +7,7 @@ angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfig
 angular.module(ApplicationConfiguration.applicationModuleName).config([
     '$locationProvider', '$httpProvider',
     function ($locationProvider, $httpProvider) {
-        $locationProvider.html5Mode(true);
+        //$locationProvider.html5Mode(true);
         //$httpProvider.defaults.useXDomain = true;
     }
 ]);

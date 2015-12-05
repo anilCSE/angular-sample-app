@@ -11,8 +11,8 @@ angular.module('core').config([
     $routeProvider.when('/', {
       templateUrl: "modules/core/views/core.client.view.html"
     }).
-    when('/someroute', {
-      templateUrl: "modules/core/views/some.client.view.html"
+    when('/users', {
+      templateUrl: "modules/core/views/user.client.view.html"
     }).
     otherwise({
       redirectTo: "/"

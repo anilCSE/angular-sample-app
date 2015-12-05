@@ -1,6 +1,6 @@
 {
   "name": "angular-app-mean",
-  "description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js.",
+  "description": "AngularJS Sample application. Inspired from MEAN.JS. Simple angular app, without node and other stuff",
   "version": "0.0.1",
   "meanjs-version": "0.4.2",
   "private": false,
